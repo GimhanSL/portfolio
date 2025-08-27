@@ -9,11 +9,11 @@ export default function HeroSection() {
   return (
     <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-20 px-4">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="md:col-span-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary whitespace-nowrap" style={{ textShadow: '0 0 8px hsl(var(--primary)), 0 0 16px hsl(var(--primary))' }}>
+        <div className="md:col-span-1 text-center md:text-left md:order-1">
+          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary whitespace-nowrap">
             Gimhan Sajee
           </h1>
-          <p className="mt-4 max-w-xl text-lg text-foreground/90 mx-auto md:mx-0">
+          <p className="mt-4 max-w-xl text-lg text-foreground mx-auto md:mx-0">
             A passionate game artist crafting immersive worlds and unforgettable characters.
           </p>
           <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
@@ -44,7 +44,7 @@ export default function HeroSection() {
               </Link>
           </div>
         </div>
-        <div className="flex justify-center md:justify-start md:col-span-1">
+        <div className="flex justify-center md:justify-end md:col-span-1 md:order-2">
             <Image
                 src="https://picsum.photos/300/400"
                 alt="Artist Portrait"
