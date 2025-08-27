@@ -1,5 +1,4 @@
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { socialLinks, assetLinks } from '@/lib/data';
@@ -8,15 +7,15 @@ import { ArrowDown } from 'lucide-react';
 export default function HeroSection() {
   return (
     <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-20 px-4">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="md:col-span-1 text-center md:text-left md:order-1">
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-primary whitespace-nowrap">
+      <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+        <div>
+          <h1 className="text-4xl md:text-5xl font-bold font-headline text-foreground whitespace-nowrap">
             Gimhan Sajee
           </h1>
-          <p className="mt-4 max-w-xl text-lg text-foreground mx-auto md:mx-0">
+          <p className="mt-4 max-w-xl text-lg text-primary mx-auto">
             A passionate game artist crafting immersive worlds and unforgettable characters.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
             {socialLinks.map((link) => (
               <Button key={link.name} variant="outline" size="icon" asChild>
                 <Link href={link.href} aria-label={link.name} target="_blank" rel="noopener noreferrer">
@@ -25,7 +24,7 @@ export default function HeroSection() {
               </Button>
             ))}
           </div>
-           <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
+           <div className="mt-6 flex flex-wrap justify-center gap-4">
               {assetLinks.map((link) => (
                    <Button key={link.name} variant="secondary" asChild>
                       <Link href={link.href} target="_blank" rel="noopener noreferrer">
@@ -35,7 +34,7 @@ export default function HeroSection() {
                   </Button>
               ))}
           </div>
-          <div className="mt-12 text-center md:text-left">
+          <div className="mt-12 text-center">
               <Link href="#projects">
                   <Button variant="ghost" className="animate-bounce">
                       <ArrowDown className="mr-2 h-4 w-4" />
@@ -43,17 +42,6 @@ export default function HeroSection() {
                   </Button>
               </Link>
           </div>
-        </div>
-        <div className="flex justify-center md:justify-end md:col-span-1 md:order-2">
-            <Image
-                src="https://picsum.photos/300/400"
-                alt="Artist Portrait"
-                width={300}
-                height={400}
-                className="object-cover"
-                data-ai-hint="pixel art character"
-                priority
-            />
         </div>
       </div>
     </section>
