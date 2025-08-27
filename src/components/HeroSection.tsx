@@ -15,12 +15,12 @@ export default function HeroSection() {
             alt="Artist Portrait"
             width={200}
             height={200}
-            className="rounded-full border-4 border-primary shadow-lg object-cover"
+            className="rounded-md border-4 border-primary shadow-lg object-cover"
             data-ai-hint="artist portrait"
             priority
           />
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-400 to-accent">
+        <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-primary">
           Your Name
         </h1>
         <p className="mt-4 max-w-xl text-lg text-muted-foreground">
