@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-20 px-4">
       <div className="absolute inset-0">
         <Image
-          src="/hero-background.png"
+          src="/Heroimg.png"
           alt="Pixel art cityscape"
           fill
           className="object-cover opacity-20"
