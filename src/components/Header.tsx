@@ -17,7 +17,7 @@ export default function Header() {
         <div className="mr-4 flex items-center">
           <Link href="#home" className="mr-6 flex items-center space-x-2">
             <Gamepad2 className="h-6 w-6 text-primary" />
-            <span className="font-bold font-headline">Level Up Portfolio</span>
+            <span className="font-bold font-headline">Gimhan Sajee</span>
           </Link>
         </div>
         
@@ -43,7 +43,7 @@ export default function Header() {
                       key={link.name}
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className="text-lg font-medium hover:text-primary transition-colors"
+                      className="text-xl font-medium hover:text-primary transition-colors"
                     >
                       {link.name}
                     </Link>
@@ -59,7 +59,7 @@ export default function Header() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+              className="text-base md:text-lg font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               {link.name}
             </Link>

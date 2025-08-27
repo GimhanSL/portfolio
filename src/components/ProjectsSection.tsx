@@ -8,7 +8,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 px-4 bg-background/80">
       <div className="container mx-auto max-w-screen-xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">My Work</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">My Creations</h2>
           <p className="text-muted-foreground mt-2">A selection of my favorite projects.</p>
         </div>
         <Tabs defaultValue="All" className="w-full">

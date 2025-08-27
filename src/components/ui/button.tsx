@@ -18,12 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        pixel:
+          // Pixel-art inspired button using palette colors. Square edges, strong border and drop shadow
+          // Shadow color uses accent; border uses foreground for contrast.
+          "relative rounded-none border-2 border-foreground bg-primary text-white shadow-[4px_4px_0_0_hsl(var(--accent))] hover:shadow-[2px_2px_0_0_hsl(var(--accent))] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] font-headline tracking-wide",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
+        pixel: "h-9 px-3 py-1 text-xs",
       },
     },
     defaultVariants: {

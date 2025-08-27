@@ -18,7 +18,7 @@ export const socialLinks: { name: string; href: string; icon: ComponentType<SVGP
 
 export const assetLinks = [
     { name: 'itch.io Assets', href: 'https://itch.io', icon: Package },
-    { name: 'Unity Asset Store', href: '#', icon: Package },
+    { name: 'Unity Asset Store', href: 'https://assetstore.unity.com/', icon: Package },
 ]
 
 export type Project = {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     title: 'Fantasy Kingdom',
     description: 'A sprawling 2D world with castles, dragons, and epic quests.',
     category: 'Games',
-    thumbnail: 'https://picsum.photos/600/400?random=1',
+    thumbnail: '/1.png',
     type: 'video',
     contentUrl: '#',
     aiHint: 'fantasy world'

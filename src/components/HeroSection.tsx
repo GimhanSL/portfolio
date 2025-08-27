@@ -19,11 +19,11 @@ export default function HeroSection() {
       </div>
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center">
         <div>
-          <h1 className="text-4xl md:text-5xl font-bold font-headline text-foreground whitespace-nowrap">
-            Gimhan Sajee
+          <h1 className="text-4xl md:text-4xl font-bold font-headline text-foreground whitespace-nowrap">
+          I <span className="text-white bg-primary px-2 py-1 rounded-md">create</span><br/> <br/> what others can <span className="text-white bg-primary px-2 py-1 rounded-md">dream</span><br/> <br/> of playing.
           </h1>
           <p className="mt-4 max-w-xl text-lg text-primary mx-auto">
-            A passionate game artist crafting immersive worlds and unforgettable characters.
+            
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             {socialLinks.map((link) => (
@@ -36,7 +36,7 @@ export default function HeroSection() {
           </div>
            <div className="mt-6 flex flex-wrap justify-center gap-4">
               {assetLinks.map((link) => (
-                   <Button key={link.name} variant="secondary" asChild>
+                   <Button key={link.name} variant="pixel" size="pixel" asChild>
                       <Link href={link.href} target="_blank" rel="noopener noreferrer">
                           <link.icon className="mr-2 h-4 w-4" />
                           {link.name}
