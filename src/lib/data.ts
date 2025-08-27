@@ -1,6 +1,6 @@
 
-import { Instagram, Linkedin, Twitter, Package, FileText, Image as ImageIcon, Video, Pinterest } from 'lucide-react';
-import { SteamIcon } from '@/components/Icons';
+import { Instagram, Linkedin, Twitter, Package, FileText, Image as ImageIcon, Video } from 'lucide-react';
+import { SteamIcon, PinterestIcon } from '@/components/Icons';
 import type { ComponentType, SVGProps } from 'react';
 
 export const navLinks = [
@@ -13,7 +13,7 @@ export const socialLinks: { name: string; href: string; icon: ComponentType<SVGP
   { name: 'Instagram', href: 'https://instagram.com', icon: Instagram },
   { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
   { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Pinterest', href: 'https://pinterest.com', icon: Pinterest },
+  { name: 'Pinterest', href: 'https://pinterest.com', icon: PinterestIcon },
 ];
 
 export const assetLinks = [
