@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="w-full border-t border-border/40 bg-background/95 backdrop-blur">
       <div className="container mx-auto py-6 flex flex-col md:flex-row items-center justify-between gap-4">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} Gimhan Sajee Kumara. All rights reserved.
         </p>
         <div className="flex gap-2">
           {socialLinks.map((link) => (

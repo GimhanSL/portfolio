@@ -11,7 +11,7 @@ export default function HeroSection() {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="md:col-span-2 text-center md:text-left">
           <h1 className="text-4xl md:text-6xl font-bold font-headline tracking-tight text-primary">
-            Your Name
+            Gimhan Sajee Kumara
           </h1>
           <p className="mt-4 max-w-xl text-lg text-muted-foreground mx-auto md:mx-0">
             A passionate game artist crafting immersive worlds and unforgettable characters.
@@ -50,7 +50,7 @@ export default function HeroSection() {
                 alt="Artist Portrait"
                 width={300}
                 height={400}
-                className="rounded-md shadow-lg object-cover"
+                className="object-cover"
                 data-ai-hint="pixel art character"
                 priority
             />
