@@ -1,5 +1,5 @@
 
-import { Instagram, Linkedin, Twitter, Package, FileText, Image as ImageIcon, Video, Pinterest, Github } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Package, FileText, Image as ImageIcon, Video, Pinterest } from 'lucide-react';
 import { SteamIcon } from '@/components/Icons';
 import type { ComponentType, SVGProps } from 'react';
 
