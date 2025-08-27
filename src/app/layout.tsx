@@ -24,8 +24,8 @@ export default function RootLayout({
         <div className="relative isolate min-h-screen">
           <div 
             className="fixed inset-0 -z-10 bg-cover bg-center" 
-            style={{backgroundImage: "url('https://picsum.photos/1920/1080')"}} 
-            data-ai-hint="game world background"
+            style={{backgroundImage: "url('https://picsum.photos/1920/1080?random=10')"}} 
+            data-ai-hint="pixel art game map"
           />
           <div className="fixed inset-0 -z-10 bg-background/90 backdrop-blur-sm" />
           {children}

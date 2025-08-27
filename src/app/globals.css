@@ -10,65 +10,65 @@
   }
   
   :root {
-    --background: 224 30% 15%;
+    --background: 260 30% 10%;
     --foreground: 210 10% 80%;
 
-    --card: 225 30% 20%;
+    --card: 260 30% 15%;
     --card-foreground: 210 10% 90%;
  
-    --popover: 224 30% 12%;
+    --popover: 260 30% 8%;
     --popover-foreground: 210 10% 90%;
  
-    --primary: 330 80% 60%;
+    --primary: 180 80% 50%;
     --primary-foreground: 0 0% 100%;
  
-    --secondary: 220 25% 25%;
+    --secondary: 250 25% 25%;
     --secondary-foreground: 210 10% 90%;
  
-    --muted: 220 25% 25%;
+    --muted: 250 25% 25%;
     --muted-foreground: 210 10% 60%;
  
-    --accent: 180 80% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 30 100% 60%;
+    --accent-foreground: 0 0% 0%;
  
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 25% 30%;
-    --input: 220 25% 30%;
-    --ring: 330 80% 60%;
+    --border: 250 25% 30%;
+    --input: 250 25% 30%;
+    --ring: 180 80% 50%;
  
     --radius: 0.25rem;
   }
  
   .dark {
-    --background: 224 30% 15%;
+    --background: 260 30% 10%;
     --foreground: 210 10% 80%;
 
-    --card: 225 30% 20%;
+    --card: 260 30% 15%;
     --card-foreground: 210 10% 90%;
  
-    --popover: 224 30% 12%;
+    --popover: 260 30% 8%;
     --popover-foreground: 210 10% 90%;
  
-    --primary: 330 80% 60%;
+    --primary: 180 80% 50%;
     --primary-foreground: 0 0% 100%;
  
-    --secondary: 220 25% 25%;
+    --secondary: 250 25% 25%;
     --secondary-foreground: 210 10% 90%;
  
-    --muted: 220 25% 25%;
+    --muted: 250 25% 25%;
     --muted-foreground: 210 10% 60%;
  
-    --accent: 180 80% 50%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 30 100% 60%;
+    --accent-foreground: 0 0% 0%;
  
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 25% 30%;
-    --input: 220 25% 30%;
-    --ring: 330 80% 60%;
+    --border: 250 25% 30%;
+    --input: 250 25% 30%;
+    --ring: 180 80% 50%;
   }
 }
  
@@ -77,6 +77,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground text-lg;
   }
 }
