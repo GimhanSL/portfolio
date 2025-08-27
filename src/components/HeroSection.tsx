@@ -1,5 +1,6 @@
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { socialLinks, assetLinks } from '@/lib/data';
 import { ArrowDown } from 'lucide-react';
@@ -7,7 +8,16 @@ import { ArrowDown } from 'lucide-react';
 export default function HeroSection() {
   return (
     <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-20 px-4">
-      <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+      <div className="absolute inset-0">
+        <Image
+          src="/hero-background.png"
+          alt="Pixel art cityscape"
+          fill
+          className="object-cover opacity-20"
+          data-ai-hint="pixel art city"
+        />
+      </div>
+      <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center">
         <div>
           <h1 className="text-4xl md:text-5xl font-bold font-headline text-foreground whitespace-nowrap">
             Gimhan Sajee
