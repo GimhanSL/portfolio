@@ -1,5 +1,5 @@
 
-import { Github, Linkedin, Twitter, Package, FileText, Image as ImageIcon, Video } from 'lucide-react';
+import { Instagram, Linkedin, Twitter, Package, FileText, Image as ImageIcon, Video, Pinterest } from 'lucide-react';
 import { SteamIcon } from '@/components/Icons';
 import type { ComponentType, SVGProps } from 'react';
 
@@ -10,10 +10,10 @@ export const navLinks = [
 ];
 
 export const socialLinks: { name: string; href: string; icon: ComponentType<SVGProps<SVGSVGElement>> }[] = [
-  { name: 'GitHub', href: 'https://github.com', icon: Github },
+  { name: 'Instagram', href: 'https://instagram.com', icon: Instagram },
   { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
   { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Steam', href: 'https://steamcommunity.com', icon: SteamIcon },
+  { name: 'Pinterest', href: 'https://pinterest.com', icon: Pinterest },
 ];
 
 export const assetLinks = [
