@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-20 px-4">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="md:col-span-2 text-center md:text-left">
-          <h1 className="text-5xl md:text-6xl font-bold font-headline text-primary">
+          <h1 className="text-5xl md:text-6xl font-bold font-headline text-primary whitespace-nowrap">
             Gimhan Sajee
           </h1>
           <p className="mt-4 max-w-xl text-lg text-muted-foreground mx-auto md:mx-0">
