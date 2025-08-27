@@ -18,7 +18,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        body: ['"VT323"', 'monospace'],
+        body: ['"Jersey 15"', 'sans-serif'],
         headline: ['"Press Start 2P"', 'cursive'],
         code: ['monospace'],
       },
