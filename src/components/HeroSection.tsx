@@ -1,4 +1,6 @@
 
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -36,12 +38,14 @@ export default function HeroSection() {
           </div>
            <div className="mt-6 flex flex-wrap justify-center gap-4">
               {assetLinks.map((link) => (
-                   <Button key={link.name} variant="pixel" size="pixel" asChild>
-                      <Link href={link.href} target="_blank" rel="noopener noreferrer">
-                          <link.icon className="mr-2 h-4 w-4" />
-                          {link.name}
-                      </Link>
-                  </Button>
+                <button
+                  key={link.name}
+                  onClick={() => window.open(link.href, '_blank', 'noopener,noreferrer')}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 relative rounded-none border-2 border-foreground bg-primary text-white shadow-[4px_4px_0_0_hsl(var(--accent))] hover:shadow-[2px_2px_0_0_hsl(var(--accent))] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] font-headline tracking-wide h-9 px-3 py-1 text-xs"
+                >
+                  <link.icon className="mr-2 h-4 w-4" />
+                  {link.name}
+                </button>
               ))}
           </div>
           <div className="mt-12 text-center">
