@@ -2,26 +2,28 @@ import Image from 'next/image';
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-20 px-4 text-lg">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left: Text */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold font-headline text-foreground">Who I am ?</h2>
-          <p className="mt-4 text-base md:text-lg text-muted-foreground">
-            I am a game artist focused on crafting immersive worlds, characters, and assets across pixel art and 3D.
-            I love blending strong color palettes with playful, retro-inspired aesthetics.
+          <h2 className="text-4xl md:text-5xl font-bold font-headline text-foreground mb-6">Who I am ?</h2>
+          <p className="text-xl md:text-2xl leading-relaxed text-muted-foreground">
+            Hello! My name is Gimhan, and I’m a game artist specializing in pixel art and low-poly 3D assets. Over the past two years, I’ve completed around 40 projects, consistently delivering results that made my clients happy. I can create any type of 3D asset based on your preferences and enhance it with my own creativity. You can explore some of my projects below.
           </p>
         </div>
         {/* Right: Portrait */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative">
-            <Image
-              src="/portrait.png"
-              alt="Portrait"
-              width={360}
-              height={360}
-              className="object-cover bg-card border-4 border-foreground shadow-[6px_6px_0_0_hsl(var(--accent))] rounded-md"
-            />
+        <div className="flex justify-center md:justify-end w-full">
+          <div className="relative w-full max-w-[360px] aspect-square">
+            <div className="relative w-full h-full overflow-hidden rounded-md">
+              <Image
+                src="/portfolio.png"
+                alt="Portrait"
+                fill
+                className="object-cover object-top"
+                style={{ objectPosition: '50% 30%' }}
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

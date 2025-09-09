@@ -12,7 +12,7 @@ export default function ProjectsSection() {
           <p className="text-muted-foreground mt-2">A selection of my favorite projects.</p>
         </div>
         <Tabs defaultValue="All" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 mx-auto max-w-md mb-8">
+          <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 mx-auto max-w-md mb-8">
             <TabsTrigger value="All">All</TabsTrigger>
             {projectCategories.map((category) => (
               <TabsTrigger key={category} value={category}>{category}</TabsTrigger>

@@ -4,7 +4,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Level Up Portfolio',
+  title: 'Gimhan Sajee',
   description: 'A portfolio for a video game artist, showcasing games, 2D pixel art, and 3D assets.',
 };
 

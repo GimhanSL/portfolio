@@ -25,7 +25,7 @@ export type Project = {
   id: number;
   title: string;
   description: string;
-  category: 'Games' | '2D Pixel Art' | '3D Assets';
+  category: '2D Pixel Art' | '3D Assets';
   thumbnail: string;
   type: 'image' | 'video' | 'pdf';
   contentUrl: string;
@@ -33,16 +33,6 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  {
-    id: 1,
-    title: 'Fantasy Kingdom',
-    description: 'A sprawling 2D world with castles, dragons, and epic quests.',
-    category: 'Games',
-    thumbnail: '/1.png',
-    type: 'video',
-    contentUrl: '#',
-    aiHint: 'fantasy world'
-  },
   {
     id: 2,
     title: 'Cyberpunk Alley',
@@ -62,16 +52,6 @@ export const projects: Project[] = [
     type: 'image',
     contentUrl: 'https://picsum.photos/1200/800?random=3',
     aiHint: 'pixel art'
-  },
-  {
-    id: 4,
-    title: 'Space Voyager',
-    description: 'A top-down space shooter game with procedurally generated levels.',
-    category: 'Games',
-    thumbnail: 'https://picsum.photos/600/400?random=4',
-    type: 'video',
-    contentUrl: '#',
-    aiHint: 'space shooter'
   },
   {
     id: 5,
@@ -113,19 +93,9 @@ export const projects: Project[] = [
     contentUrl: 'https://picsum.photos/1200/800?random=8',
     aiHint: 'platformer tileset'
   },
-  {
-    id: 9,
-    title: 'Forgotten Dungeon',
-    description: 'An atmospheric dungeon crawler game.',
-    category: 'Games',
-    thumbnail: 'https://picsum.photos/600/400?random=9',
-    type: 'video',
-    contentUrl: '#',
-    aiHint: 'dungeon crawler'
-  },
 ];
 
-export const projectCategories: ('Games' | '2D Pixel Art' | '3D Assets')[] = ['Games', '2D Pixel Art', '3D Assets'];
+export const projectCategories: ('2D Pixel Art' | '3D Assets')[] = ['2D Pixel Art', '3D Assets'];
 
 export const projectTypeIcons = {
   image: ImageIcon,
