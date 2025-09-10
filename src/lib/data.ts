@@ -10,14 +10,14 @@ export const navLinks = [
 ];
 
 export const socialLinks: { name: string; href: string; icon: ComponentType<SVGProps<SVGSVGElement>> }[] = [
-  { name: 'Instagram', href: 'https://instagram.com', icon: Instagram },
-  { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
-  { name: 'LinkedIn', href: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Pinterest', href: 'https://pinterest.com', icon: PinterestIcon },
+  { name: 'Instagram', href: 'https://www.instagram.com/kanagamestudios/', icon: Instagram },
+  { name: 'Twitter', href: 'https://x.com/KanaGamestudios', icon: Twitter },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/gimhan-sajee-kumara-5229131ab/', icon: Linkedin },
+  { name: 'Pinterest', href: 'https://www.pinterest.com/kanagamestudios/', icon: PinterestIcon },
 ];
 
 export const assetLinks = [
-    { name: 'itch.io Assets', href: 'https://gima-sl.itch.io/', icon: Package },
+    { name: 'itch.io Assets', href: 'https://kana-games.itch.io/', icon: Package },
     { name: 'Unity Asset Store', href: 'https://assetstore.unity.com/', icon: Package },
 ]
 
@@ -25,77 +25,77 @@ export type Project = {
   id: number;
   title: string;
   description: string;
-  category: '2D Pixel Art' | '3D Assets';
+  category: 'Pixel art' | '3D models';
   thumbnail: string;
   type: 'image' | 'video' | 'pdf';
-  contentUrl: string;
+  artstationUrl: string;
   aiHint: string;
 };
 
 export const projects: Project[] = [
   {
     id: 2,
-    title: 'Cyberpunk Alley',
-    description: 'Detailed 3D models of a futuristic city alley.',
-    category: '3D Assets',
-    thumbnail: 'https://picsum.photos/600/400?random=2',
+    title: 'Robot fight animation workflow',
+    description: 'This project shows a red enemy robot searching for another robot to kill.',
+    category: '3D models',
+    thumbnail: 'https://cdnb.artstation.com/p/assets/images/images/088/367/387/large/gimhan-sajee-kumara-c4.jpg?1748105387',
     type: 'image',
-    contentUrl: 'https://picsum.photos/1200/800?random=2',
-    aiHint: 'cyberpunk city'
+    artstationUrl: 'https://www.artstation.com/artwork/oJm9b4',
+    aiHint: 'Robo fight animation'
   },
   {
     id: 3,
     title: '8-Bit Hero Sprites',
     description: 'A collection of classic 8-bit style character sprites.',
-    category: '2D Pixel Art',
+    category: 'Pixel art',
     thumbnail: 'https://picsum.photos/600/400?random=3',
     type: 'image',
-    contentUrl: 'https://picsum.photos/1200/800?random=3',
+    artstationUrl: 'https://www.artstation.com/kanagamestudios',
     aiHint: 'pixel art'
   },
   {
     id: 5,
-    title: 'Low-Poly Nature Pack',
-    description: 'A collection of low-poly trees, rocks, and foliage for game development.',
-    category: '3D Assets',
-    thumbnail: 'https://picsum.photos/600/400?random=5',
+    title: 'Low poly car with some boxes',
+    description: 'Basic low poly car model with some camera angles.',
+    category: '3D models',
+    thumbnail: 'https://cdnb.artstation.com/p/assets/images/images/088/156/385/large/gimhan-sajee-kumara-car2.jpg?1747593202',
     type: 'image',
-    contentUrl: 'https://picsum.photos/1200/800?random=5',
-    aiHint: 'low-poly nature'
+    artstationUrl: 'https://www.artstation.com/artwork/NqYROg',
+    aiHint: 'car'
   },
   {
     id: 6,
     title: 'Animated Pixel Effects',
     description: 'A set of animated pixel art effects like explosions, smoke, and magic spells.',
-    category: '2D Pixel Art',
+    category: 'Pixel art',
     thumbnail: 'https://picsum.photos/600/400?random=6',
     type: 'image',
-    contentUrl: 'https://picsum.photos/1200/800?random=6',
+    artstationUrl: 'https://www.artstation.com/kanagamestudios',
     aiHint: 'pixel effects'
   },
   {
     id: 7,
-    title: 'Medieval Weapon Set',
-    description: 'High-quality 3D models of swords, axes, and shields.',
-    category: '3D Assets',
-    thumbnail: 'https://picsum.photos/600/400?random=7',
+    title: 'Mining tools models (Blender)',
+    description: 'Mining tools models made in Blender with basic materials.',
+    category: '3D models',
+    thumbnail: 'https://cdna.artstation.com/p/assets/images/images/087/986/528/large/gimhan-sajee-kumara-mine.jpg?1747169476',
     type: 'image',
-    contentUrl: 'https://picsum.photos/1200/800?random=7',
-    aiHint: 'medieval weapons'
+    artstationUrl: 'https://www.artstation.com/artwork/wr4BZO',
+    aiHint: 'Mining tools'
   },
   {
     id: 8,
     title: 'Platformer Tile Set',
     description: 'A versatile tile set for creating 2D platformer levels.',
-    category: '2D Pixel Art',
+    category: 'Pixel art',
     thumbnail: 'https://picsum.photos/600/400?random=8',
     type: 'image',
-    contentUrl: 'https://picsum.photos/1200/800?random=8',
+    artstationUrl: 'https://www.artstation.com/kanagamestudios',
     aiHint: 'platformer tileset'
   },
 ];
 
-export const projectCategories: ('2D Pixel Art' | '3D Assets')[] = ['2D Pixel Art', '3D Assets'];
+export const projectCategories: ('Pixel art' | '3D models')[] = ['Pixel art', '3D models'];
 
 export const projectTypeIcons = {
   image: ImageIcon,

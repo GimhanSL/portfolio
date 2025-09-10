@@ -4,10 +4,10 @@ import { Mail } from 'lucide-react';
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="py-20 px-4">
+    <section id="contact" className="py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-screen-md text-center">
-        <h2 className="text-3xl md:text-4xl font-bold font-headline">Get In Touch</h2>
-        <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-headline">Get In Touch</h2>
+        <p className="text-muted-foreground mt-4 max-w-xl mx-auto text-sm sm:text-base">
           I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
         </p>
         <div className="mt-8">

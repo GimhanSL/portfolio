@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 export default function Footer() {
   return (
     <footer className="w-full border-t border-border/40 bg-background/95 backdrop-blur">
-      <div className="container mx-auto py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-sm text-muted-foreground">
+      <div className="container mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p className="text-xs sm:text-sm text-muted-foreground text-center md:text-left">
           &copy; {new Date().getFullYear()} Gimhan Sajee. All rights reserved.
         </p>
         <div className="flex gap-2">

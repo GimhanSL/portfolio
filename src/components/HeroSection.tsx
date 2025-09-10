@@ -9,7 +9,7 @@ import { ArrowDown } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-20 px-4">
+    <section id="home" className="relative flex items-center justify-center min-h-[calc(100vh-56px)] py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div className="absolute inset-0">
         <Image
           src="/Heroimg.png"
@@ -21,7 +21,7 @@ export default function HeroSection() {
       </div>
       <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center text-center">
         <div>
-          <h1 className="text-4xl md:text-4xl font-bold font-headline text-foreground whitespace-nowrap">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-headline text-foreground leading-tight">
           I <span className="text-white bg-primary px-2 py-1 rounded-md">create</span><br/> <br/> what others can <span className="text-white bg-primary px-2 py-1 rounded-md">dream</span><br/> <br/> of playing.
           </h1>
           <p className="mt-4 max-w-xl text-lg text-primary mx-auto">
@@ -36,12 +36,12 @@ export default function HeroSection() {
               </Button>
             ))}
           </div>
-           <div className="mt-6 flex flex-wrap justify-center gap-4">
+           <div className="mt-6 flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
               {assetLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => window.open(link.href, '_blank', 'noopener,noreferrer')}
-                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 relative rounded-none border-2 border-foreground bg-primary text-white shadow-[4px_4px_0_0_hsl(var(--accent))] hover:shadow-[2px_2px_0_0_hsl(var(--accent))] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] font-headline tracking-wide h-9 px-3 py-1 text-xs"
+                  className="inline-flex items-center justify-center gap-2 font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 relative rounded-none border-2 border-foreground bg-primary text-white shadow-[4px_4px_0_0_hsl(var(--accent))] hover:shadow-[2px_2px_0_0_hsl(var(--accent))] hover:translate-x-[2px] hover:translate-y-[2px] active:shadow-none active:translate-x-[4px] active:translate-y-[4px] font-headline tracking-wide h-10 px-4 py-2 text-sm"
                 >
                   <link.icon className="mr-2 h-4 w-4" />
                   {link.name}
