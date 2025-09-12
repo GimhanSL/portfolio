@@ -34,6 +34,26 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: 0,
+    title: 'War game assets',
+    description: 'These are for conceptual game. used some realistic materials for realistic look.',
+    category: '3D models',
+    thumbnail: 'https://cdna.artstation.com/p/assets/images/images/091/744/722/medium/gimhan-sajee-kumara-scene.jpg?1757663319',
+    type: 'image',
+    artstationUrl: 'https://www.artstation.com/artwork/nJGQAe',
+    aiHint: '3D weapons'
+  },
+  {
+    id: 1,
+    title: 'Elementor Gun Game asset.',
+    description: 'This one is a game asset from a ongoing game that have 3 elements as bullets.',
+    category: '3D models',
+    thumbnail: 'https://cdna.artstation.com/p/assets/images/images/091/712/898/medium/gimhan-sajee-kumara-p1.jpg?1757574001',
+    type: 'image',
+    artstationUrl: 'https://www.artstation.com/artwork/5WGm1g',
+    aiHint: 'Gun'
+  },
+  {
     id: 2,
     title: 'Robot fight animation workflow',
     description: 'This project shows a red enemy robot searching for another robot to kill.',
@@ -45,12 +65,12 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: '8-Bit Hero Sprites',
-    description: 'A collection of classic 8-bit style character sprites.',
+    title: 'pixel hero cards',
+    description: 'ach card player have their own abilities and strengths',
     category: 'Pixel art',
-    thumbnail: 'https://picsum.photos/600/400?random=3',
+    thumbnail: 'https://cdnb.artstation.com/p/assets/images/images/091/715/303/medium/gimhan-sajee-kumara-2.jpg?1757581644',
     type: 'image',
-    artstationUrl: 'https://www.artstation.com/kanagamestudios',
+    artstationUrl: 'https://www.artstation.com/artwork/XJ8qYY',
     aiHint: 'pixel art'
   },
   {
@@ -65,13 +85,13 @@ export const projects: Project[] = [
   },
   {
     id: 6,
-    title: 'Animated Pixel Effects',
-    description: 'A set of animated pixel art effects like explosions, smoke, and magic spells.',
+    title: 'Minecraft texture pack',
+    description: 'A set of pixel art textures for Minecraft.',
     category: 'Pixel art',
-    thumbnail: 'https://picsum.photos/600/400?random=6',
+    thumbnail: 'https://cdna.artstation.com/p/assets/images/images/091/746/386/medium/gimhan-sajee-kumara-i1.jpg?1757668914',
     type: 'image',
-    artstationUrl: 'https://www.artstation.com/kanagamestudios',
-    aiHint: 'pixel effects'
+    artstationUrl: 'https://www.artstation.com/artwork/bgRKKn',
+    aiHint: 'minecraft texture pack'
   },
   {
     id: 7,
@@ -85,13 +105,13 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    title: 'Platformer Tile Set',
-    description: 'A versatile tile set for creating 2D platformer levels.',
+    title: 'Dog stylised Props',
+    description: 'A set of pixel art props for a game.',
     category: 'Pixel art',
-    thumbnail: 'https://picsum.photos/600/400?random=8',
+    thumbnail: 'https://cdna.artstation.com/p/assets/images/images/091/747/000/medium/gimhan-sajee-kumara-33.jpg?1757670735',
     type: 'image',
-    artstationUrl: 'https://www.artstation.com/kanagamestudios',
-    aiHint: 'platformer tileset'
+    artstationUrl: 'https://www.artstation.com/artwork/a0eYo0',
+    aiHint: 'Dog props'
   },
 ];
 
